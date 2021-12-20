@@ -1,15 +1,17 @@
 import './App.css';
+import Title from "./components/Title";
+import Button from "./components/Button";
+
 
 const App = () => {
   return (
       <div className="App">
         <div className="wrap">
           <div className="card">
-            <h1>Hello</h1>
+            <Title/>
             <input type="text"/>
             <div>
-              <button>Prev</button>
-              <button>Next</button>
+              <Button/>
             </div>
           </div>
         </div>
