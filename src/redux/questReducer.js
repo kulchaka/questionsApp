@@ -1,26 +1,18 @@
 const initialState = {
- questList: [
-   {
-     id: 1,
-     quest: 'Who?',
-     answer: ''
-   },
-      {
-     id: 2,
-     quest: 'What?',
-     answer: ''
-   },
-      {
-     id: 3,
-     quest: 'When?',
-     answer: ''
-   },
-      {
-     id: 4,
-     quest: 'Where?',
-     answer: ''
-   }
- ]
+  questList: [
+    {
+      quest: 'Who?'
+    },
+    {
+      quest: 'What?'
+    },
+    {
+      quest: 'When?'
+    },
+    {
+      quest: 'Where?'
+    }
+  ]
 }
 
 export const questReducer = (state = initialState, action) => {

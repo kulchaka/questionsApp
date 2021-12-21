@@ -1,4 +1,4 @@
-import {NEXT_STEP, PREV_STEP} from "./types";
+import {INPUT, NEXT_STEP, PREV_STEP} from "./types";
 
 export const incrementStep = () => {
   return {
@@ -9,5 +9,15 @@ export const incrementStep = () => {
 export const decrementStep = () => {
   return {
     type: PREV_STEP
+  }
+}
+
+export const inputGet = (text, id) => {
+  return {
+    type: INPUT,
+    data: {
+      id,
+      text
+    }
   }
 }
